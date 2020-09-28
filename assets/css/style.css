@@ -1,53 +1,241 @@
 
+ 
+ /* General overarching applies to everything css */
  {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+   
   }
  
+
+
+
+
+
+        /* Intro AAREA */
+
+.intro {
+    text-align: center;
+}
+
+.intro p {
+    line-height: 1.7;
+    color: #39a6b2;
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+
+}
+        /* HEADER / HEADING / HEADED */
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #fce138;
+    margin: 0;
+    display: inline;
+}
+
+header {
+    padding: 20px 35px;
+    background-color: #39a6b2;
+}
+
+header a {
+    text-decoration: none;
+    color: #fce138;
+
+}
+
+header nav {
+
+    float: right;
+    margin: 7px 0;
+}
+
+header nav ul li {
+    display: inline;
+
+}
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+}
+.section-title {
+    font-size:55px;
+    color: #024e76;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    border-bottom: 3px solid;
+}
+
+
+            /* Body */ 
+body {
+    color: #39a6b2;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+
+        /* Hero Style Start */
+.hero {
+    background-image: url("../images/hero-bg.jpg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
  
+  
+  .hero-form {
+      background-color: #fce138;
+      padding: 20px;
+      width: 500px;
+      color: #024e76;
+  
+  }
+  
+  .hero-form{
+      ...
+      border-style: solid;
+      border-width: 3px;
+      border-color: #024e76;
+  }
+  
+  .hero-form {
+      ...
+      border: 3px solid #024e76;
+      background-color: #fce138;
+      padding: 20px;
+      width: 500px;
+      color: #024e76;
+      position: absolute;
+      bottom: 120px;
+      right: 140px;
+  }
+      
+  
+  
+  /* Secondary page Hero Section */
+  
+  .hero-secondary {
+      margin: 20px;
+      background-color:white;
+      font-size: 20px;
+      color: blue;
+  }
+
  
- body {
-        color: #39a6b2;
-        font-family: Helvetica, Arial, sans-serif;
-      }
+                /* STEPS AREA */
+ .primary-border {
+     border-color: #fce138;
+ }
+
+ .secondary-border {
+     border-color: #39a6b2;
+ }
+ 
+ .steps span {
+     font-size: 38px;
+ }
+
+ .steps {
+    text-align: center;
+    background: #fce138;
+}
+
+.steps div {
+    margin-bottom: 80px;
+}
+
+.steps img {
+    width: 15%;
+    margin: 10px 0;
+}
+
+.steps h3 {
+    color: #024e76;
+    font-size: 46px;
+    margin-top: 10px;
+}
+
+.steps p {
+    color: #39a6b2;
+    font-size: 23px;
+}
 
 
 
-    header h1 {
-        font-weight: bold;
-        font-size: 36px;
+
+  
+
+    /* trainers css */
+
+    .trainers {
+        text-align: center;
+      
+    }
+
+    .trainer {
+        width: 900px;
+        margin: 0 auto 30px auto;
+        background: #024e76;
         color: #fce138;
-        margin: 0;
-        display: inline;
-    }
-    header {
-        padding: 20px 35px;
-        background-color: #39a6b2;
+        overflow: auto;
+     
     }
 
-    header a {
-        text-decoration: none;
-        color: #fce138;
+   .trainers img {
+       width: 25%;
+    float: left;
+       
+   }
 
-    }
+   .img-right {
+       float: right;
+   }
+   .img-left {
+       float: left;
+   }
 
-    header nav {
-
+    .trainer-bio {
+        padding: 35px;
         float: right;
-        margin: 7px 0;
-    }
-
-    header nav ul li {
-        display: inline;
+        width: 65%;
 
     }
-    header nav ul li a {
-        margin: 0 30px;
+
+    .trainer-bio h3 {
+        font-size: 32px;
+        margin-bottom: 8px;
+    }
+
+    .trainer-bio h4 {
         font-weight: lighter;
-        font-size: 22px;
+        font-size: 26px;
+        margin-bottom: 25px;
     }
 
+    
+    .trainer-bio p {
+        font-size: 17px;
+        line-height: 1.3;
+    }
+
+    
+    
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+
+
+            /* FOOTER AREA */
     footer{
         background: #fce138;
         width: 100%;
@@ -63,50 +251,22 @@
 
     }
 
-    footer div {
-        float: right;
-        line-height: 1.5;
-        text-align: right;
-    }
+  
     footer a {
         color: #024e76;
 
     }
 
-/* Hero Style Start */
-.hero {
-  background-image: url("../images/hero-bg.jpg");
-  height: 600px;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-/* Hero Style End */
+    footer div {
+            float: right;
+            line-height: 1.5;
+            text-align: right;
+        }
+  
 
-.hero-form {
-    background-color: #fce138;
-    padding: 20px;
-    width: 500px;
-    color: #024e76;
+   
 
-}
+    
 
-.hero-form{
-    ...
-    border-style: solid;
-    border-width: 3px;
-    border-color: #024e76;
-}
-
-.hero-form {
-    ...
-    border: 3px solid #024e76;
-    background-color: #fce138;
-    padding: 20px;
-    width: 500px;
-    color: #024e76;
-    position: absolute;
-    bottom: 120px;
-    right: 140px;
-}
+  
     
