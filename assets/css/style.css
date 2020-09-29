@@ -1,11 +1,6 @@
 
  
- /* General overarching applies to everything css */
- {
-    margin: 0;
-    padding: 0;
-   
-  }
+
  
 
 
@@ -78,13 +73,13 @@ body {
 
 
         /* Hero Style Start */
-.hero {
-    background-image: url("../images/hero-bg.jpg");
-    height: 600px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
+        .hero {
+            background-image: url("../images/hero-bg.jpg");
+            height: 600px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+          }
  
   
   .hero-form {
@@ -94,27 +89,28 @@ body {
       color: #024e76;
   
   }
-  
-  .hero-form{
-      ...
-      border-style: solid;
-      border-width: 3px;
-      border-color: #024e76;
-  }
-  
+  /*
   .hero-form {
-      ...
-      border: 3px solid #024e76;
-      background-color: #fce138;
-      padding: 20px;
-      width: 500px;
-      color: #024e76;
-      position: absolute;
-      bottom: 120px;
-      right: 140px;
-  }
-      
-  
+    ...
+    border-style: solid;
+    border-width: 3px;
+    border-color: #024e76;
+}
+
+.hero-form {
+    ...
+    border: 3px solid #024e76;
+    background-color: #fce138;
+    padding: 20px;
+    width: 500px;
+    color: #024e76;
+    position: absolute;
+    bottom: 120px;
+    right: 140px;
+}
+    
+ 
+
   
   /* Secondary page Hero Section */
   
@@ -234,6 +230,50 @@ body {
 
 
 
+        /* reaCH OUT AREA */
+
+      
+       .contact {
+           text-align:center;
+           
+       }
+
+        .contact h2{
+            color: #fce138;
+        }  
+        .contact {
+            background: #024e76;
+        }
+
+        .contact-info iframe {
+            width: 400px;
+            height: 400px;
+        }
+
+        .contact-info div {
+            width: 410px;
+            display: inline-block;
+            vertical-align: top;
+            text-align: left;
+            margin: 30px 0 0 60px;
+            color: white;
+          }
+        
+          .contact-info h3 {
+            color: #fce138;
+            font-size: 32px;
+          }
+          
+          .contact-info p, .contact-info address {
+            margin: 20px 0;
+            line-height: 1.5;
+            font-size: 20px;
+            font-style: normal;
+          }
+          
+          .contact-info a {
+            color: #fce138;
+          }
 
             /* FOOTER AREA */
     footer{
