@@ -84,7 +84,7 @@
 
                     <p>Fill out this form and one of our trainers will schedule a consult</p>
                     
-                <form>
+                <form class="form-input">
                     <label for="name">Enter full name:</label>
                     <input type="text" placeholder="Your Name" name="name" id="name" />
                 
@@ -96,18 +96,22 @@
                 
                     <p>
                         Have you worked out with a trainer before?
+                        <span class="radio-wrapper">
                         <input type="radio" name="trainer-confirm" id="trainer-yes" />
                         <label for="trainer-yes">Yes</label>
                         <input type="radio" name="trainer-confirm" id="trainer-no" />
                         <label for="trainer-no">No</label>
+                        </span>
                     </p>
                     
                     <p>
+                        <span class="checkbox-wrapper">
                         <label for="checkbox" >
                             I acknowledge that I am at least 18 years of age.
                         </label>
 
                         <input type="checkbox" name="age-confirm" id="checkbox" />
+                        </span>
                     </p>
                 
                 
@@ -141,7 +145,7 @@
   </section>
   
   <!-- "what you do" section -->
-  <section id="what-you-do"  >
+  <section id="what-you-do" class="steps"  >
       <div class="flex-row">
     <h2 class="section-title secondary-border">What You Do</h2>
     </div>
@@ -398,7 +402,7 @@
 
   <div class="contact-info">
     <div>
-      <h3>Run Buddy</h3>
+      <h3 class="section-title secondary-border">Run Buddy</h3>
       <p>
         Any questions or concerns before signing up?
         <br />
@@ -416,13 +420,13 @@
     </div>
   
     <div class="contact-info">
-      <h3>Contact Us</h3>
+      <h3 class="section-title secondary-border">Contact Us</h3>
       <form>
         <label for="contact-name">Your Name</label>
         <input type="text" id="contact-name" placeholder="Your Name"/>
         <label for="contact-message">Message</label>
         <textarea id="contact-message" placeholder="Message"></textarea>
-        <button type="submit">Submit</button>
+        <button type="subimt" class="contact-form button">Submit</button>
       </form>
     </div>
   

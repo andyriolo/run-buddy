@@ -1,7 +1,7 @@
 
  
 
- 
+
 
 
 
@@ -27,6 +27,7 @@ header h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     
 }
 
@@ -36,6 +37,14 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
 }
 
 header nav ul {
@@ -59,7 +68,19 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+
+
+
 .section-title {
     font-size:48px;
     color: #024e76;
@@ -87,12 +108,14 @@ body {
         justify-content: center;
         flex-wrap: wrap;
         align-items: flex-start;
+        background-attachment: fixed;
+        background-position: 80%;
        
 }
  
   
   .hero-form {
-      background-color: #fce138;
+      background-color: 
       padding: 20px;
       width: 500px;
       color: #024e76;
@@ -108,10 +131,18 @@ body {
 
 .hero-form {
     border: 3px solid #024e76;
-    background-color: #fce138;
+    box-shadow: 0 0 10px rgba(252, 225, 56, 0.8);
     padding: 20px;
     color: #024e76;
+    background-color: rgba(252, 225, 56, 0.8);
+    box-shadow: 252 0  rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
 }
+
+.hero-form button:hover {
+    background-color: #39a6b2;
+}
+
 .hero-cta {
     width: 35%;
     text-align: right;
@@ -125,9 +156,16 @@ body {
     font-style: italic;
     font-size: 55px;
     color: #fce138;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
     
- 
+    .form-input: {
+        background-color: rgba(255, 255, 255, 0.75);
+    }
+
+    .form-input:focus {
+        background-color: rgba(255,255,255, 1);
+    }
 
   
   /* Secondary page Hero Section */
@@ -150,6 +188,10 @@ body {
      border-color: #39a6b2;
     
  }
+
+ .contact-form input:focus, .contact-form textarea:focus {
+
+}
 
 
 
@@ -211,10 +253,77 @@ body {
     max-width: 100%;
 }
 
+.step:last-child {
+    border-bottom: 1px solid #39a6b2;
+}
+
+.step:nth-child(even) {
+    border-bottom: 1px solid #39a6b2;
+}
   
 
     /* trainers css */
+    .checkbox-wrapper input, .radio-wrapper input {
+        opacity: 0;
+    }
 
+    .checkbox-wrapper label, .radio-wrapper label {
+        position: relative;
+        left: 10px;
+        margin: 10px;
+        line-height: 1.6;
+    }
+
+
+
+
+      .checkbox-wrapper label::before, .radio-wrapper label::before {
+        content: "";
+        height: 20px;
+        width: 20px;
+        background: rgba(255, 255, 255, 0.75);  
+        border: 1px solid #024e76;  
+        position: absolute;
+        top: -4px;
+        left: -30px;
+    }
+
+      .radio-wrapper label::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #024e76;
+        position: absolute;
+        left: -29px;
+        top: -3px;
+        background-image: radial-gradient(circle, #39a6b2, #024e76);
+      }
+
+     
+      .checkbox-wrapper label::after {
+        content: "";
+        height: 6px;
+        width: 14px;
+        border-left: 2px solid #024e76;
+        border-bottom: 2px solid #024e76;
+        position: absolute;
+        left: -26px;
+        top: 1px;
+        transform: rotate(-58deg);
+        
+      }
+
+  
+      .checkbox-wrapper input + label::after, 
+.radio-wrapper input + label::after {
+  content: none;
+}
+
+.checkbox-wrapper input:checked + label::after, 
+.radio-wrapper input:checked + label::after {
+  content: "";
+}
     .trainers {
         width: 100%;
         margin: 0 auto;
@@ -293,6 +402,7 @@ body {
            color: #024e76;
            width: 100%;
            margin-top: 5px;
+           border-radius: 10px;
        }
 
        .contact-form button {
@@ -303,7 +413,14 @@ body {
            text-align: center;
            padding: 15px 0;
            font-size: 16px;
+           border-radius: 10px;
        }
+
+       .contact-form button:hover {
+           color: #fce138;
+           background: #39a6b2;
+       }
+       
         .contact h2{
             color: #fce138;
         }  
@@ -452,6 +569,7 @@ body {
     header {
         padding-bottom: 0;
         justify-content: center;
+        position: relative;
     }
 
     header h1 {
@@ -545,7 +663,7 @@ body {
     .step-text {
         flex: 100%;
     }
-  }
+  
 
    
   .service-grid-container {
@@ -565,7 +683,7 @@ grid-row: -1;
 }
 
 
-
+}
 
 
 
@@ -575,6 +693,7 @@ grid-row: -1;
 
     .hero-form button {
         width: 100%;
+        border-radius: 10px;
     }
 
     .section-title {
